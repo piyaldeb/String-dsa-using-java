@@ -1,0 +1,22 @@
+public class Longest_Repating_subsequence {
+    public  static void main(String [] arg){
+        String str="abccccdeef";
+        int l1=str.length();
+        int max=Integer.MIN_VALUE;
+        int count=0;
+        for(int i=0;i<l1-1;i++){
+            count =0;
+            for(int j=i;j<l1-1;j++){
+                if(str.charAt(i)==str.charAt(j)){
+                    count++;
+                }
+            }
+           if(max<count){
+               max= Math.max(max,count);
+
+           }
+
+        }
+        System.out.println(max);
+    }
+}
