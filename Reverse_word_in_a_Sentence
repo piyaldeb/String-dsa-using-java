@@ -1,0 +1,28 @@
+public class Reverse_word_in_a_Sentence {
+    public static String Reversestring(String n) {
+        String Word[] = n.split(" ");
+        String Words = "";
+
+        String ans = "";
+        for (int i = 0; i < Word.length; i++) {
+            Words = Word[i];
+            String reverse = "";
+
+            for (int j = Words.length() - 1; j >= 0; j--) {
+
+                reverse = reverse + Words.charAt(j);
+
+            }
+            ans = ans + reverse + " ";
+
+        }
+        return ans;
+    }
+
+    public static void main(String arg[]) {
+        String str = " My name is piyal";
+        String Final=Reversestring(str);
+        System.out.print(Final);
+    }
+}
+
