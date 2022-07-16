@@ -1,0 +1,14 @@
+public class Fuction_of_string {
+    public static void main(String arg[]){
+        String str="Coding";
+        String str2="Is fun";
+        String str3="Coding";
+        System.out.println(str.compareTo(str3));//compare with their ASCI values
+        System.out.println(str.compareTo(str2));//compare with their ASCI values
+        System.out.println(str.equals(str2));//compare and return result by boolean value
+        System.out.println(str.contains("ding"));//if contain then return bool value
+        System.out.println(str2.length());//length of the string
+        System.out.println(str2.charAt(3));//str1[i] is forbidden for java.this function use for find the value of a particular index
+        System.out.println(str2.substring(1,4));
+    }
+}
